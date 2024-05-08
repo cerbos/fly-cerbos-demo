@@ -110,11 +110,15 @@ This is a ExpressJs application that provides a APIs for users to view and manag
       ```bash
       cd ../server
       ```
-    -  **Update Environment Variables:**
-    
-         Open the [fly.toml](./server/fly.toml) file.
+    - **Add and update Environment Variables:**
+      1. Open the [fly.toml](./server/fly.toml) file, Copy `CERBOS_PDP_URL`
 
-         Update the environment variables, especially set `CERBOS_PDP_URL` to the URL of your deployed Cerbos PDP instance. 
+      2. Update the environment variables in `.env.prod.sample`, especially set `CERBOS_PDP_URL` to the URL of your deployed Cerbos PDP instance.
+      3. Create `.env` file in the root folder and copy paste the content of `.env.prod.sample`.
+
+      ```bash
+      cp .env.prod.sample .env
+      ```
 
     - **Use Fly Launch to quickly deploy NodeJs api sever using a Docker image. :**
 
