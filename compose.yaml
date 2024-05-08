@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  cerbos:
+    build: ./cerbos
+    container_name: cerbos-pdp
+    ports:
+      - '3592:3592'
+      - '3593:3593'
+    volumes:
+      - ./cerbos/policies:/policies
+    command: ['server']
+
+  api:
+    build: ./server
+    container_name: server
+    command: npm run dev
+    ports:
+      - '3000:3000'
+    env_file:
+      - ./server/.env
+    depends_on:
+      - cerbos
+    develop:
+      watch:
+        - action: sync
+          path: ./server/src
+          target: /app/src
+        - action: rebuild
+          path: ./server/package*.json
