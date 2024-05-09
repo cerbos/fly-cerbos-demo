@@ -1,3 +1,3 @@
-import {cerbosService} from "./cerbos.service.js";
+import { cerbosService } from "./cerbos.service.js";
 
-export {cerbosService}
+export { cerbosService };

@@ -110,7 +110,9 @@ This is a ExpressJs application that provides a APIs for users to view and manag
       ```bash
       cd ../server
       ```
+
     - **Add and update Environment Variables:**
+
       1. Open the [fly.toml](./server/fly.toml) file, Copy `CERBOS_PDP_URL`
 
       2. Update the environment variables in `.env.prod.sample`, especially set `CERBOS_PDP_URL` to the URL of your deployed Cerbos PDP instance.
@@ -126,15 +128,15 @@ This is a ExpressJs application that provides a APIs for users to view and manag
       flyctl launch
       ```
 
-5. **Testing APIs using Postman**
+5.  **Testing APIs using Postman**
 
-   - Open Postman
+    - Open Postman
 
-   - Import this [collection](./server/node-cerbos.postman_collection.json).
+    - Import this [collection](./server/node-cerbos.postman_collection.json).
 
-   - Replace the URL in each request with the URL of your Node.js server.
+    - Replace the URL in each request with the URL of your Node.js server.
 
-   - Access the courses and test whether the authorization logic is working properly.
+    - Access the courses and test whether the authorization logic is working properly.
 
 <br>
 

@@ -1,4 +1,4 @@
-import {authentication} from './authentication.middleware.js';
-import errorHandler from './error.middleware.js';
+import { authentication } from "./authentication.middleware.js";
+import errorHandler from "./error.middleware.js";
 
-export {authentication, errorHandler};
+export { authentication, errorHandler };

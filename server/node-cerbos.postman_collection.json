@@ -1,329 +1,297 @@
 {
-	"info": {
-		"_postman_id": "92d9eb10-6ad3-4a59-92c1-3b3669cdc019",
-		"name": "node-cerbos",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "31850881"
-	},
-	"item": [
-		{
-			"name": "Signup",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"email\": \"admin@cerbos.dev\",\n    \"password\": \"cerbos\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/auth/signup",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"auth",
-						"signup"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "Signup",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"email\": \"admin@cerbos.dev\",\n    \"password\": \"cerbos\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3000/auth/signup",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"auth",
-								"signup"
-							]
-						}
-					},
-					"status": "Created",
-					"code": 201,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						},
-						{
-							"key": "Set-Cookie",
-							"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE1MTU2MDAwfQ.n-H8OxWsCa0d2maYasM0y-PpwWQxN60x3quJTMhFGzw; Path=/; HttpOnly"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "237"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"ed-hKX41HaZGertMqDIc1hFXaxm7Es\""
-						},
-						{
-							"key": "Date",
-							"value": "Wed, 08 May 2024 08:13:20 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"admin@cerbos.dev\",\n        \"password\": \"cerbos\"\n    },\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE1MTU2MDAwfQ.n-H8OxWsCa0d2maYasM0y-PpwWQxN60x3quJTMhFGzw\",\n    \"message\": \"User registered successfully\"\n}"
-				}
-			]
-		},
-		{
-			"name": "Signin",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"email\": \"admin@cerbos.dev\",\n    \"password\": \"cerbos\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:3000/auth/signin",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"auth",
-						"signin"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "Signin",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"email\": \"admin@cerbos.dev\",\n    \"password\": \"cerbos\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3000/auth/signin",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"auth",
-								"signin"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "X-Powered-By",
-							"value": "Express"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						},
-						{
-							"key": "Set-Cookie",
-							"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE1MTU2MDE3fQ.3-OOsZ7FTsjGZfcjSsLPTKj306O-QYygjicjXPnrmWY; Path=/; HttpOnly"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Content-Length",
-							"value": "236"
-						},
-						{
-							"key": "ETag",
-							"value": "W/\"ec-C2Sztv7yJQU2JAYFXm5aJVb8T/A\""
-						},
-						{
-							"key": "Date",
-							"value": "Wed, 08 May 2024 08:13:37 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Keep-Alive",
-							"value": "timeout=5"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"admin@cerbos.dev\",\n        \"password\": \"cerbos\"\n    },\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE1MTU2MDE3fQ.3-OOsZ7FTsjGZfcjSsLPTKj306O-QYygjicjXPnrmWY\",\n    \"message\": \"User signed in successfully\"\n}"
-				}
-			]
-		},
-		{
-			"name": "Get All Courses",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true,
-				"disabledSystemHeaders": {}
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://node-cerbos.fly.dev/courses",
-					"protocol": "https",
-					"host": [
-						"node-cerbos",
-						"fly",
-						"dev"
-					],
-					"path": [
-						"courses"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "Get All Courses",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://node-cerbos.fly.dev/courses",
-							"protocol": "https",
-							"host": [
-								"node-cerbos",
-								"fly",
-								"dev"
-							],
-							"path": [
-								"courses"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "x-powered-by",
-							"value": "Express"
-						},
-						{
-							"key": "access-control-allow-origin",
-							"value": "*"
-						},
-						{
-							"key": "content-type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "content-encoding",
-							"value": "br"
-						},
-						{
-							"key": "etag",
-							"value": "W/\"15e-lPL1tQFe70O/wXf5W+RnrxJOhXk\""
-						},
-						{
-							"key": "date",
-							"value": "Wed, 08 May 2024 10:39:43 GMT"
-						},
-						{
-							"key": "connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "keep-alive",
-							"value": "timeout=5"
-						},
-						{
-							"key": "transfer-encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "server",
-							"value": "Fly/23b6c4a7 (2024-05-07)"
-						},
-						{
-							"key": "via",
-							"value": "1.1 fly.io"
-						},
-						{
-							"key": "fly-request-id",
-							"value": "01HXBWK8ZF91EJ1VJ4DRYSR01G-bom"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"courses\": [\n        {\n            \"id\": \"1\",\n            \"title\": \"Linux Foundations\",\n            \"price\": 49,\n            \"status\": \"PUBLISHED\",\n            \"authorId\": \"2\",\n            \"author\": \"Rohit\"\n        },\n        {\n            \"id\": \"3\",\n            \"title\": \"JS Foundations\",\n            \"price\": 29,\n            \"status\": \"PUBLISHED\",\n            \"authorId\": \"3\",\n            \"author\": \"Alex\"\n        },\n        {\n            \"id\": \"4\",\n            \"title\": \"React 16\",\n            \"price\": 49,\n            \"status\": \"DEPRECATED\",\n            \"authorId\": \"3\",\n            \"author\": \"Alex\"\n        }\n    ],\n    \"message\": \"Courses fetched successfully\"\n}"
-				}
-			]
-		}
-	]
+  "info": {
+    "_postman_id": "92d9eb10-6ad3-4a59-92c1-3b3669cdc019",
+    "name": "node-cerbos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "31850881"
+  },
+  "item": [
+    {
+      "name": "Signup",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"admin@cerbos.dev\",\n    \"password\": \"cerbos\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/signup",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["auth", "signup"]
+        }
+      },
+      "response": [
+        {
+          "name": "Signup",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"admin@cerbos.dev\",\n    \"password\": \"cerbos\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/signup",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["auth", "signup"]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Set-Cookie",
+              "value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE1MTU2MDAwfQ.n-H8OxWsCa0d2maYasM0y-PpwWQxN60x3quJTMhFGzw; Path=/; HttpOnly"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "237"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"ed-hKX41HaZGertMqDIc1hFXaxm7Es\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 08 May 2024 08:13:20 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"admin@cerbos.dev\",\n        \"password\": \"cerbos\"\n    },\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE1MTU2MDAwfQ.n-H8OxWsCa0d2maYasM0y-PpwWQxN60x3quJTMhFGzw\",\n    \"message\": \"User registered successfully\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Signin",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"admin@cerbos.dev\",\n    \"password\": \"cerbos\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/auth/signin",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["auth", "signin"]
+        }
+      },
+      "response": [
+        {
+          "name": "Signin",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"email\": \"admin@cerbos.dev\",\n    \"password\": \"cerbos\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/signin",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["auth", "signin"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Set-Cookie",
+              "value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE1MTU2MDE3fQ.3-OOsZ7FTsjGZfcjSsLPTKj306O-QYygjicjXPnrmWY; Path=/; HttpOnly"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "236"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"ec-C2Sztv7yJQU2JAYFXm5aJVb8T/A\""
+            },
+            {
+              "key": "Date",
+              "value": "Wed, 08 May 2024 08:13:37 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"user\": {\n        \"id\": 1,\n        \"email\": \"admin@cerbos.dev\",\n        \"password\": \"cerbos\"\n    },\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzE1MTU2MDE3fQ.3-OOsZ7FTsjGZfcjSsLPTKj306O-QYygjicjXPnrmWY\",\n    \"message\": \"User signed in successfully\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Get All Courses",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true,
+        "disabledSystemHeaders": {}
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://node-cerbos.fly.dev/courses",
+          "protocol": "https",
+          "host": ["node-cerbos", "fly", "dev"],
+          "path": ["courses"]
+        }
+      },
+      "response": [
+        {
+          "name": "Get All Courses",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://node-cerbos.fly.dev/courses",
+              "protocol": "https",
+              "host": ["node-cerbos", "fly", "dev"],
+              "path": ["courses"]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-encoding",
+              "value": "br"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"15e-lPL1tQFe70O/wXf5W+RnrxJOhXk\""
+            },
+            {
+              "key": "date",
+              "value": "Wed, 08 May 2024 10:39:43 GMT"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=5"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "server",
+              "value": "Fly/23b6c4a7 (2024-05-07)"
+            },
+            {
+              "key": "via",
+              "value": "1.1 fly.io"
+            },
+            {
+              "key": "fly-request-id",
+              "value": "01HXBWK8ZF91EJ1VJ4DRYSR01G-bom"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"courses\": [\n        {\n            \"id\": \"1\",\n            \"title\": \"Linux Foundations\",\n            \"price\": 49,\n            \"status\": \"PUBLISHED\",\n            \"authorId\": \"2\",\n            \"author\": \"Rohit\"\n        },\n        {\n            \"id\": \"3\",\n            \"title\": \"JS Foundations\",\n            \"price\": 29,\n            \"status\": \"PUBLISHED\",\n            \"authorId\": \"3\",\n            \"author\": \"Alex\"\n        },\n        {\n            \"id\": \"4\",\n            \"title\": \"React 16\",\n            \"price\": 49,\n            \"status\": \"DEPRECATED\",\n            \"authorId\": \"3\",\n            \"author\": \"Alex\"\n        }\n    ],\n    \"message\": \"Courses fetched successfully\"\n}"
+        }
+      ]
+    }
+  ]
 }
